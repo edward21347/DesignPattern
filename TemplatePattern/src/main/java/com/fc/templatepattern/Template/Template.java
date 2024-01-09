@@ -1,4 +1,4 @@
-package com.fc.templatepattern;
+package com.fc.templatepattern.Template;
 
 abstract class Template {
     public void baseAlgo(){

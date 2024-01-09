@@ -1,5 +1,5 @@
 package com.fc.strategypattern.Cash;
-
+//策略模式与工厂模式结合使用，隐藏算法/策略的实现，让客户只调用就行了
 public class CashFactory {
 
     public CashContext createCashAccept(int cashType){
