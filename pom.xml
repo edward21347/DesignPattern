@@ -9,16 +9,19 @@
     <name>DesignPattern</name>
     <description>DesignPattern</description>
     <modules>
-        <module>FactoryPattern</module>
         <module>ChainOfResponsePattern</module>
-        <module>FactoryMethodPattern</module>
         <module>CompositePattern</module>
         <module>DecoratorPattern</module>
         <module>StrategyPattern</module>
         <module>TemplatePattern</module>
+        <module>FactoryMethodPattern</module>
+        <module>AbstractFactoryPattern</module>
+        <module>FactoryPattern</module>
     </modules>
     <properties>
         <java.version>8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.6.13</spring-boot.version>
@@ -95,8 +98,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>19</source>
-                    <target>19</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
