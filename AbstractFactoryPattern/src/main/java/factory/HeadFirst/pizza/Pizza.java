@@ -5,30 +5,29 @@ import factory.HeadFirst.rawMaterial.*;
 import java.util.Arrays;
 
 public abstract class Pizza {
-    String name;
+    protected String name;
 
-    Dough dough;
-    Sauce sauce;
-    Veggies veggies[];
-    Cheese cheese;
-    Pepperoni pepperoni;
-    Clams clams;
+    protected Dough dough;
+    protected Sauce sauce;
+    protected Cheese cheese;
+    protected Pepperoni pepperoni;
+    protected Clams clams;
 
     /**
      * pizza制作过程
      */
-    abstract void prepare(RawMaterial... rawMaterials);
+    public abstract void prepare();
 
-    void bake(){
-        System.out.println("烘烤25min...");
+    public void bake(){
+        System.out.println("烘烤"+name+"25min...");
     }
 
-    void cut(){
-        System.out.println("把pizza切成六份...");
+    public void cut(){
+        System.out.println("把"+name+"切成六份...");
     }
 
-    void box(){
-        System.out.println("把pizza装进盒子里...");
+    public void box(){
+        System.out.println("把"+name+"装进盒子里...");
     }
 
     public String getName() {
@@ -45,7 +44,6 @@ public abstract class Pizza {
                 "name='" + name + '\'' +
                 ", dough=" + dough +
                 ", sauce=" + sauce +
-                ", veggies=" + Arrays.toString(veggies) +
                 ", cheese=" + cheese +
                 ", pepperoni=" + pepperoni +
                 ", clams=" + clams +

@@ -17,6 +17,7 @@
         <module>FactoryMethodPattern</module>
         <module>AbstractFactoryPattern</module>
         <module>FactoryPattern</module>
+        <module>StatePattern</module>
     </modules>
     <properties>
         <java.version>8</java.version>
