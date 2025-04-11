@@ -7,7 +7,7 @@ abstract class Template {
         this.concrete1();
         this.concrete2();
     }
-
+ 
     protected abstract void concrete1();
 
     protected abstract void concrete2();
